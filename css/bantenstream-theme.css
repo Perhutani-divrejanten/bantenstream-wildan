@@ -1,0 +1,236 @@
+/* ====== BantenStream Theme Enhancement ====== */
+/* Advanced styling untuk BantenStream dengan variasi gradasi warna yang elegan */
+
+/* ===== Header Enhancement ===== */
+.top-header {
+    background: linear-gradient(90deg, rgba(17,122,101,0.08), transparent);
+    border-bottom: 2px solid var(--theme-green);
+    box-shadow: 0 2px 8px rgba(17, 122, 101, 0.08);
+}
+
+/* ===== Logo Animation Enhancement ===== */
+.top-header .logo a.navbar-brand.logo {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    background: linear-gradient(135deg, #117a65 0%, #0C5B4B 50%, #2a9d8f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.top-header .logo a.navbar-brand.logo:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #2a9d8f 0%, #117a65 50%, #0C5B4B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== Navigation Enhancement ===== */
+@media (min-width: 768px) {
+    .header .navbar {
+        background: linear-gradient(90deg, #0C5B4B 0%, #08463e 100%) !important;
+        border-bottom: 3px solid var(--theme-green-light);
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease, padding 0.2s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #117a65, #2a9d8f);
+    transition: width 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after,
+.navbar-dark .navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* ===== Heading Style Enhancement ===== */
+h1, h2, h3, h4, h5, h6 {
+    color: #353535;
+}
+
+h2, h3 {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::before, h3::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--theme-green), transparent);
+}
+
+/* ===== Card and Box Shadow Enhancement ===== */
+.cat-news h2 i,
+.sidebar .sidebar-widget h2 i {
+    background: linear-gradient(135deg, var(--theme-green), var(--theme-green-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== Hover Effects ===== */
+.top-news .tn-img:hover img,
+.cat-news .cn-img:hover img {
+    filter: brightness(1.1) contrast(1.05);
+    -webkit-filter: brightness(1.1) contrast(1.05);
+}
+
+/* ===== Sidebar Tag Enhancement ===== */
+.sidebar .sidebar-widget .tags a {
+    border-color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.sidebar .sidebar-widget .tags a:hover {
+    background: var(--theme-gradient);
+    border-color: var(--theme-green);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(17, 122, 101, 0.25);
+    transform: translateY(-2px);
+}
+
+/* ===== Footer Enhancement ===== */
+.footer-social-only {
+    background: linear-gradient(180deg, #0a3f37 0%, #0c5b4b 100%);
+    border-top: 2px solid var(--theme-green-light);
+}
+
+.footer-social-only .social a {
+    border-color: rgba(17, 122, 101, 0.3);
+    transition: all 0.3s ease;
+}
+
+.footer-social-only .social a:hover {
+    background: var(--theme-gradient-light);
+    border-color: var(--theme-green-light);
+    box-shadow: 0 0 15px rgba(17, 122, 101, 0.3);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    background: linear-gradient(180deg, #0d5855 0%, #083b37 100%);
+    border-top: 3px solid var(--theme-green);
+}
+
+/* ===== Load More Button Enhancement ===== */
+.load-more {
+    background: var(--theme-gradient-aqua);
+    box-shadow: 0 10px 25px rgba(17, 122, 101, 0.25);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.load-more:hover {
+    background: var(--theme-gradient-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(17, 122, 101, 0.35);
+}
+
+.load-more:active {
+    transform: translateY(-1px);
+}
+
+/* ===== Links Enhancement ===== */
+a {
+    color: var(--theme-green);
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--theme-green-dark);
+    text-decoration: none;
+}
+
+/* ===== Breadcrumb Enhancement ===== */
+.breadcrumb-wrap .breadcrumb .breadcrumb-item a {
+    color: var(--theme-green);
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item a:hover {
+    color: var(--theme-green-dark);
+}
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item.active {
+    color: #666666;
+}
+
+/* ===== Form Focus Enhancement ===== */
+.form-control:focus,
+.custom-select:focus {
+    border-color: var(--theme-green);
+    box-shadow: 0 0 0 0.2rem rgba(17, 122, 101, 0.15);
+}
+
+/* ===== Search Button Enhancement ===== */
+.top-header .search button:hover {
+    background: var(--theme-gradient-light);
+    color: #ffffff;
+}
+
+/* ===== Social Links Enhancement ===== */
+.top-header .social a:hover {
+    background: var(--theme-gradient);
+    border-color: var(--theme-green);
+    box-shadow: 0 0 12px rgba(17, 122, 101, 0.25);
+}
+
+/* ===== Back to Top Enhancement ===== */
+.back-to-top:hover {
+    background: linear-gradient(135deg, var(--theme-green), var(--theme-green-light));
+    box-shadow: 0 4px 12px rgba(17, 122, 101, 0.25);
+}
+
+/* ===== News Title Enhancement ===== */
+.single-news .sn-content a.sn-title:hover {
+    color: var(--theme-gradient);
+    background: linear-gradient(135deg, var(--theme-green), var(--theme-green-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== Mobile Responsive Enhancement ===== */
+@media (max-width: 767px) {
+    .top-header .logo a.navbar-brand.logo {
+        font-size: 1.7rem;
+    }
+    
+    .load-more {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+/* ===== Print Enhancement ===== */
+@media print {
+    .top-header,
+    .header,
+    .footer,
+    .footer-bottom {
+        background: white;
+        border: 1px solid #cccccc;
+    }
+}
